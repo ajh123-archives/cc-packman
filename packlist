@@ -1,6 +1,6 @@
 name = packman
 	type = raw
-		url = https://raw.githubusercontent.com/lyqyd/cc-packman/master/packman
+		url = https://raw.githubusercontent.com/ajh123-development/cc-packman/main/packman
 		filename = packman
 	setup = packman fetch
 	category = utility
@@ -10,8 +10,8 @@ name = packman
 end
 
 name = easy-shell
-	type = pastebin
-		url = wzWFmaav
+	type = raw
+		url = https://raw.githubusercontent.com/ajh123-development/cc-packman/main/easy-shell
 		filename = easy-shell
 	setup = easy-shell install
 	cleanup = easy-shell remove
@@ -23,7 +23,7 @@ end
 
 name = backpack
 	type = raw
-		url = https://raw.githubusercontent.com/lyqyd/cc-packman/master/backpack
+		url = https://raw.githubusercontent.com/ajh123-development/cc-packman/main/backpack
 		filename = backpack
 	category = utility api
 	target = /usr/apis
