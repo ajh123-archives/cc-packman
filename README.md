@@ -1,5 +1,7 @@
 ### Packman - Package Management for ComputerCraft
 
+Based of [Lyqyd's cc-packman](https://github.com/lyqyd)cc-packman]
+
 # 1 - Setup
 
 ## 1.1 - Manual Installation
