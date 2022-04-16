@@ -443,7 +443,7 @@ if mode == "bootstrap" then
 	if not backpack or backpack.list["main/packman"] == nil then
 		--grab the backpack API, since we have no transaction queue yet.
 		io.write("Updating Backpack API\n")
-		remoteHandle = http.get("https://raw.githubusercontent.com/ajh123-devlopment/cc-packman/main/backpack")
+		remoteHandle = http.get("https://raw.githubusercontent.com/ajh123-development/cc-packman/main/backpack")
 		local apiContents = ""
 		if remoteHandle then
 			if not fs.exists("/usr/apis") then fs.makeDir("/usr/apis") end
@@ -461,7 +461,7 @@ if mode == "bootstrap" then
 		end
 
 		io.write("Fetching main package list\n")
-		remoteHandle = http.get("https://raw.githubusercontent.com/ajh12-development/cc-packman/main/packlist")
+		remoteHandle = http.get("https://raw.githubusercontent.com/ajh123-development/cc-packman/main/packlist")
 		local packlistContents = ""
 		if remoteHandle then
 			if not fs.exists("/etc/repositories") then fs.makeDir("/etc/repositories") end
