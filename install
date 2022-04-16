@@ -1,0 +1,16 @@
+local response = http and http.get("https://raw.githubusercontent.com/ajh123-development/cc-packman/main/packman")
+if response then
+    if not fs.exists("/usr/bin") then fs.makeDir("/usr/bin") end
+    local handle = io.open("/usr/bin/packman", "w")
+    if handle then
+        handle:write(response.readAll())
+        handle:close()
+    else
+        error("Could not write /usr/bin/packman")
+    end
+    response.close()
+else
+    error("Could not fetch packman")
+end
+shell.run("/usr/bin/packman bootstrap")
+shell.run("/usr/bin/packman force install easy-shell")
