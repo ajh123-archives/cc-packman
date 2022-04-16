@@ -212,7 +212,7 @@ if fetch then
 	end
 	io.write("Fetching Repository List\n")
 	local repolistContent = ""
-	remoteHandle = http.get("https://raw.githubusercontent.com/ajh123-devlopment/cc-packman/main/repolist")
+	remoteHandle = http.get("https://raw.githubusercontent.com/ajh123-development/cc-packman/main/repolist")
 	if remoteHandle then
 		repolistContent = remoteHandle.readAll()
 		if queue then
