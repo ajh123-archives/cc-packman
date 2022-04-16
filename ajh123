@@ -1,0 +1,16 @@
+name = gtmos
+	type = github
+		author = ajh123-development
+		repository = gtmos-cc
+		branch = main
+	category = os
+	setup = installer
+	dependencies = none
+	target = /gtmos
+	-- help = github
+	--	author = lyqyd
+	--	repository = LyqydOS-help
+	--	branch = master
+	version = 1.10.0
+	size = 142394
+end
